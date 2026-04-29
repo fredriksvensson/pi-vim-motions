@@ -1,0 +1,21 @@
+# AGENTS.md
+
+- See `docs/AGENT_CONTEXT.md`
+- Testing
+  - tests first
+  - business behavior focus
+- Dev rules
+  - no hidden assumptions, ask when unclear
+  - smallest fix
+  - surgical diffs
+  - define success checks
+  - verify
+- Upstream refs
+  - prefer `../pi-mono/`, fallback GitHub
+  - check keybindings/extensions/TUI APIs first for extension behavior
+- Code Style
+  - no `any` (use `unknown` only if must)
+  - check real types in `node_modules`
+  - ask before removing intentional code
+  - no backward compatibility unless asked
+  - never commit unless asked
