@@ -1,23 +1,42 @@
 {
   "name": "pi-vim-motions",
-  "private": true,
   "version": "1.0.0",
   "description": "Vim-style motion extension for Pi.",
   "license": "MIT",
   "author": "Fredrik Svensson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredriksvensson/pi-vim-motions.git"
+  },
+  "homepage": "https://github.com/fredriksvensson/pi-vim-motions#readme",
+  "bugs": {
+    "url": "https://github.com/fredriksvensson/pi-vim-motions/issues"
+  },
   "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
   "scripts": {
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "build": "tsc -p tsconfig.json",
-    "test": "pnpm run build && node --test test/**/*.test.mjs"
+    "test": "pnpm run build && node --test test/**/*.test.mjs",
+    "prepack": "pnpm run build"
   },
   "devDependencies": {
     "fallow": "^2.54.3",
     "typescript": "^5.9.3"
   },
-  "dependencies": {
-    "@mariozechner/pi-coding-agent": "^0.70.2",
-    "@mariozechner/pi-tui": "^0.70.2"
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*"
   },
   "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
   "keywords": [
@@ -25,7 +44,7 @@
   ],
   "pi": {
     "extensions": [
-      "./src/index.ts"
+      "./dist/index.js"
     ]
   }
 }
