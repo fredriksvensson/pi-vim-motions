@@ -1,15 +1,18 @@
 {
   "name": "pi-vim-motions",
   "private": true,
-  "version": "0.1.0",
-  "description": "Vim-style motion extension for Pi",
+  "version": "1.0.0",
+  "description": "Vim-style motion extension for Pi.",
   "license": "MIT",
   "author": "Fredrik Svensson",
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
+    "test": "pnpm run build && node --test test/**/*.test.mjs"
   },
   "devDependencies": {
+    "fallow": "^2.54.3",
     "typescript": "^5.9.3"
   },
   "dependencies": {
