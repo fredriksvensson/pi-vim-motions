@@ -130,3 +130,19 @@ In order of when its likely to be implemented:
 - Search motions/repeats (`/`, `?`, `n`, `N`, `;`, `,`)
 - Full WORD/edge-accurate Vim parity
 - `;`/`,` repeat-find
+
+## Development
+
+This is its own package with its own tooling so that its not depending on pi's
+environment for development. Just run `pnpm install` to pull necessary
+dependencies and `pnpm test` to run the test suite.
+
+I added some basic agent related things and fallow. You can of course make a
+pull request if you have something you want to extend but please don't just let
+the coding agent go ham on it.
+
+Otherwise raise an issue and I can have a look at it.
+
+Next step in this is probably to tidy up the commands.ts and introduce a bit
+more extendable structure to it. I will see how I can extend pi. For now its
+more so I can edit text properly inside pi.
