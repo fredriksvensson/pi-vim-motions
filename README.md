@@ -4,7 +4,7 @@ Vim Motions extension and keybindings for [pi](https://pi.dev)
 
 ## How to install
 
-- `pi install git:github.com/fredriksvensson/pi-vim-motions`
+- `pi install npm:pi-vim-motions`
 - add into **~/.pi/keybindings.json**:
 
 ```json
