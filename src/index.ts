@@ -1,5 +1,5 @@
-import { CustomEditor, type ExtensionAPI } from "@mariozechner/pi-coding-agent";
-import { parseKey, truncateToWidth, visibleWidth } from "@mariozechner/pi-tui";
+import { CustomEditor, type ExtensionAPI } from "@earendil-works/pi-coding-agent";
+import { parseKey, truncateToWidth, visibleWidth } from "@earendil-works/pi-tui";
 import {
   ANY_KEY,
   commands,

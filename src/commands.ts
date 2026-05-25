@@ -1,4 +1,4 @@
-import { CustomEditor } from "@mariozechner/pi-coding-agent";
+import { CustomEditor } from "@earendil-works/pi-coding-agent";
 import { getCursor, getEditorOps } from "./editor-ops.js";
 
 export type Mode = "normal" | "insert" | "visual" | "operatorPending";
